@@ -1,9 +1,11 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  font-size: 2rem;
+
   max-width: 1000px;
-  background-color: #fff;
   margin: 0 auto;
+
+  font-size: 2rem;
+  background-color: #fff;
   box-shadow: 0 0 4px 0 #000;
 }

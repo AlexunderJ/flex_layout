@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox - projekt</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="logo">LOGO</div>
-      <form action="/" class="serch">wyszukiwarka</form>
-      <div class="settings">ustawienia</div>
+      <div class="logo">
+        <img class="logo__image" src="img/logo.png" alt="" />
+      </div>
+      <form action="/" class="serch">
+        <input
+          type="text"
+          class="serch__input"
+          placeholder="wyszukaj wskazaną frazę"
+        />
+        <button class="serch__btn">Wyszukaj</button>
+      </form>
+      <div class="settings">
+        <a href="" class="settings__icon-link"
+          ><i class="fa fa-sliders" aria-hidden="true"></i>
+        </a>
+        <a href="" class="settings__icon-link"
+          ><i class="fa fa-sliders" aria-hidden="true"></i>
+        </a>
+        <a href="" class="settings__icon-link"
+          ><i class="fa fa-sliders" aria-hidden="true"></i>
+        </a>
+      </div>
       <nav class="menu">menu</nav>
       <section class="main-articles">artykóły GŁ</section>
       <section class="articles-list">artykóły lista</section>

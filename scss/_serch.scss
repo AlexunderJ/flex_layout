@@ -1,0 +1,35 @@
+.serch {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $third-color;
+  &__input {
+    flex-basis: 60%;
+    height: 50%;
+    max-height: 6rem;
+    margin-right: 1.5rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    &:focus {
+      box-shadow: 0 0 2px 1px $main-color;
+      font-weight: bold;
+    }
+  }
+  &__btn {
+    height: 50%;
+    max-height: 6rem;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border: 2px solid $main-color;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: 0.4s;
+    &:hover {
+      color: $third-color;
+      background-color: $main-color;
+      cursor: pointer;
+    }
+  }
+}

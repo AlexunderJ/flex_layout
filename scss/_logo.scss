@@ -1,0 +1,9 @@
+.logo {
+  flex-basis: 150px;
+  height: 80px;
+  background-color: $third-color;
+  &__image {
+    display: block;
+    height: 100%;
+  }
+}
