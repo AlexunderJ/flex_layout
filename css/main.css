@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|Roboto:100,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: #f6f8ff;
+  font-family: arial, sans-serif;
+  color: #f6f8ff;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 2rem;
+  background-color: #f6f8ff;
+  -webkit-box-shadow: 0 0 4px 0 #000;
+          box-shadow: 0 0 4px 0 #000;
+}
+
+.logo {
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  height: 80px;
+  background-color: #70a288;
+}
+
+.logo__image {
+  display: block;
+  height: 100%;
+}
+
+.serch {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #70a288;
+}
+
+@media (max-width: 640px) {
+  .serch {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 8rem;
+  }
+}
+
+.serch__input {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  height: 50%;
+  max-height: 6rem;
+  margin-right: 1.5rem;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+}
+
+.serch__input:focus {
+  -webkit-box-shadow: 0 0 2px 1px #031d44;
+          box-shadow: 0 0 2px 1px #031d44;
+  font-weight: bold;
+}
+
+.serch__btn {
+  height: 50%;
+  max-height: 6rem;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border: 2px solid #031d44;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.serch__btn:hover {
+  color: #70a288;
+  background-color: #031d44;
+  cursor: pointer;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3rem 0 5rem;
+  background-color: #70a288;
+}
+
+@media (max-width: 640px) {
+  .settings {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 0 0 0;
+  }
+}
+
+.settings__icon-link {
+  margin: 0 0.5rem;
+  font-size: 3rem;
+  color: #031d44;
+}
+
+.settings__icon-link:hover {
+  color: black;
+}
+
+.menu {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 7rem;
+  background-color: #23ce6b;
+  font-family: "pt sans", "robot", "arial";
+  padding: 1.5rem 5rem 1.5rem 8rem;
+}
+
+.menu__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  margin: 0 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
+
+.menu__item:hover {
+  border-bottom: 2px solid #031d44;
+}
+
+.menu__item:nth-last-child(1) {
+  margin-left: auto;
+  border: 1px solid #031d44;
+  padding: 0 2.2rem;
+}
+
+.menu__item:nth-last-child(1):hover {
+  border: 2px solid #f6f8ff;
+}
+
+.menu__item:nth-last-child(1) .menu__link {
+  padding: 0 2rem;
+}
+
+.menu__link {
+  display: block;
+  color: #f6f8ff;
+  text-decoration: none;
+}
+
+.main-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #031d44;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-articles__intro {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 6rem 0 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 4.4rem;
+  letter-spacing: 0.2rem;
+  color: #031d44;
+  background-color: #70a288;
+}
+
+.article {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.article__image {
+  display: block;
+  width: 100%;
+}
+
+.article__title {
+  padding: 3.5rem 0 1.5rem;
+  font-family: "pt sans", "robot", "arial";
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.article__introduction {
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.article__btn {
+  display: block;
+  margin: 1rem auto;
+  width: 50%;
+  padding: 0.5rem 1rem;
+  min-width: 15rem;
+  font-size: 1.6rem;
+  color: #f6f8ff;
+  text-decoration: none;
+  border: 2px solid #f6f8ff;
+  background-color: #23ce6b;
+}
+
+.article--small {
+  padding: 2rem 3rem;
+}
+
+.article--small .article__title {
+  font-size: 1.8rem;
+  background-color: #031d44;
+}
+
+.article:hover {
+  background-color: black;
+}
+
+.articles-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background-color: #70a288;
+}
+
+.articles-list .article {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: #f6f8ff;
+  margin: 2rem 0;
+}
+
+.articles-list .article:hover {
+  background-color: #7795ff;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .articles-list .article {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media (max-width: 640px) {
+  .articles-list .article {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #031d44;
+}
+
+.footer .sm-links {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.sm-links {
+  margin: 1rem;
+}
+
+.sm-links {
+  font-family: "pt sans", "robot", "arial";
+}
+
+.sm-links--darken {
+  background-color: #23ce6b;
+}
+
+.sm-links__title {
+  margin: 2rem 0 4rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.sm-links__item {
+  text-indent: 4rem;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=main.css.map */
