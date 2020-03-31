@@ -3,7 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  @media (max-width: 799px) {
+    flex-basis: 100%;
+    order: -1;
+    height: 8rem;
+  }
   background-color: $third-color;
   &__input {
     flex-basis: 60%;
