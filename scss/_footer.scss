@@ -2,21 +2,20 @@
   display: flex;
   flex-basis: 100%;
   justify-content: space-evenly;
-  background-color: $shade-two;
+  background-color: $main-color;
   .sm-links {
     flex-basis: 30%;
   }
 }
 
 .sm-links {
-  height: 30rem;
-  background-color: $shade-two;
+  margin: 1rem;
 }
 
 .sm-links {
   font-family: $special-font;
   &--darken {
-    background-color: darken($shade-two, 30%);
+    background-color: $shade-three;
   }
   &__title {
     margin: 2rem 0 4rem;
