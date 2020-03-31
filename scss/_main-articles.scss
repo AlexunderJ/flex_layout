@@ -16,7 +16,7 @@
 }
 .article {
   flex-basis: 50%;
-  @media (max-width: 799px) {
+  @include mq(small) {
     flex-basis: 100%;
   }
   padding: 1.5rem;
